@@ -1,6 +1,6 @@
-<footer class="relative mt-32 sm:mt-40" aria-labelledby="footer-heading">
+<footer class="relative mx-auto mt-32 max-w-2xl sm:mt-40 md:max-w-none" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
-  <div class="mx-auto max-w-7xl px-6 pb-8 lg:px-8">
+  <div class="mx-auto max-w-7xl px-6 pb-8 md:px-8">
     <div class="xl:grid xl:grid-cols-3 xl:gap-8">
       <div class="space-y-8">
         <img class="h-10" src="/assets/images/stabilize-white-text-emerald-logo.png" alt="Company name" />
@@ -116,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+    <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 md:mt-24">
       <p class="text-xs leading-5 text-neutral-400">&copy; 2023 Stabilize Development LLC. All rights reserved.</p>
     </div>
   </div>

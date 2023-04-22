@@ -1,5 +1,5 @@
 @extends('_layouts.main') @section('body')
-<main class="relative isolate max-w-7xl mx-auto">
+<main class="relative isolate mx-auto max-w-7xl pt-8">
   <!-- Background -->
   <div
     class="absolute inset-x-0 top-4 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
@@ -30,83 +30,49 @@
     ></div>
   </div>
 
-  <div class="px-6 pt-14 lg:px-8">
-    <div class="mx-auto pt-12 sm:pt-20 max-w-2xl">
-      <h2 class="space-y-2 text-5xl font-semibold tracking-tight text-white lg:text-6xl">
-        <span class="block lg:inline-block">
-          Eliminate
-          <span class="text-emerald-600">Friction</span>
-          <span class="text-3xl -ml-3">,</span>
-        </span>
-        <span class="block lg:inline-block">
-          Maximize
-          <span class="text-emerald-600">Momentum</span>
-        </span>
-      </h2>
-      <p class="my-10 leading-8 text-neutral-300 text-xl lg:my-8 lg:text-xl">
-        We make tools so your team can build quality software efficiently. Focus on creating and enjoy the freedom of
-        <span class="italic font-semibold text-emerald-500">stability</span>.
-      </p>
-    </div>
+  <div class="mx-auto max-w-7xl px-6 md:px-8">
+    <h2 class="space-y-2 text-5xl font-semibold tracking-tight text-white md:text-6xl">
+      <span class="block md:inline-block">
+        Eliminate
+        <span class="text-emerald-600">Friction</span>
+        <span class="-ml-3 text-3xl">,</span>
+      </span>
+      <span class="block md:inline-block">
+        Maximize
+        <span class="text-emerald-600">Momentum</span>
+      </span>
+    </h2>
+    <p class="my-10 text-xl leading-8 text-neutral-300 md:my-4 md:text-xl">
+      We make tools so your team can build quality software efficiently. Focus on creating and enjoy the freedom of
+      <span class="font-semibold italic text-emerald-500">stability</span>.
+    </p>
   </div>
 
-  <!-- Companies Section -->
-  <div class="mt-16 sm:mt-20">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-      <div
-        class="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5"
-      >
-        <img
-          class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/transistor-logo-white.svg"
-          alt="Transistor"
-          width="158"
-          height="48"
-        />
-        <img
-          class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/reform-logo-white.svg"
-          alt="Reform"
-          width="158"
-          height="48"
-        />
-        <img
-          class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/tuple-logo-white.svg"
-          alt="Tuple"
-          width="158"
-          height="48"
-        />
-        <img
-          class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/savvycal-logo-white.svg"
-          alt="SavvyCal"
-          width="158"
-          height="48"
-        />
-        <img
-          class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-          src="https://tailwindui.com/img/logos/158x48/statamic-logo-white.svg"
-          alt="Statamic"
-          width="158"
-          height="48"
-        />
-      </div>
-      <div class="mt-16 flex justify-center">
-        <p class="relative rounded-full bg-neutral-950 px-4 py-1.5 text-sm leading-6 text-neutral-300">
-          <span class="hidden md:inline">Over 2500 companies use our tools to better their business.</span>
-          <a href="#" class="font-semibold text-emerald-500"
-            ><span class="absolute inset-0" aria-hidden="true"></span> Read our customer stories
-            <span aria-hidden="true">&rarr;</span></a
-          >
+  <div x-ref="technologies" id="technlogies" class="mx-auto mt-16 px-6 sm:mt-20 md:px-8">
+    <div class="grid grid-cols-1 items-center gap-x-8 gap-y-16 md:grid-cols-2">
+      <div class="mx-auto w-full max-w-xl md:mx-0">
+        <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <span class="text-emerald-500">Technologies</span> you can trust
+        </h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a
+          scelerisque amet ullamcorper eu enim et fermentum, augue.
         </p>
       </div>
+      <div
+        class="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 md:mx-0 md:max-w-none md:pl-8"
+      >
+        <img class="mx-auto h-auto w-24 sm:w-24" src="/assets/images/tech/laravel.svg" alt="Laravel" />
+        <img class="mx-auto h-auto w-24 sm:w-24" src="/assets/images/tech/alpine.svg" alt="Transistor" />
+        <img class="mx-auto h-auto w-24 sm:w-24" src="/assets/images/tech/tailwind.svg" alt="Statamic" />
+        <img class="mx-auto h-auto w-24 object-contain sm:w-24" src="/assets/images/tech/livewire.svg" alt="Livewire" />
+      </div>
     </div>
   </div>
 
-  <!-- Values section -->
-  <div class="mx-auto mt-16 max-w-7xl px-6 sm:mt-20 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
+  <!-- Tenets section -->
+  <div x-ref="tenets" id="tenets" class="mx-auto mt-16 px-6 sm:mt-20 md:px-8">
+    <div class="mx-auto max-w-2xl md:mx-0">
       <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
         Our <span class="text-emerald-500">tenets</span>
       </h2>
@@ -116,7 +82,7 @@
       </p>
     </div>
     <dl
-      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-neutral-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16"
+      class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-neutral-300 sm:grid-cols-2 md:mx-0 md:max-w-none md:gap-x-16"
     >
       <div class="relative pl-9">
         <dt class="inline font-semibold text-white">
@@ -238,8 +204,8 @@
   </div>
 
   <!-- Team section -->
-  <div class="mx-auto mt-16 sm:mt-20 max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0">
+  <div x-ref="team" id="team" class="mx-auto mt-16 px-6 sm:mt-20 md:px-8">
+    <div class="mx-auto max-w-2xl md:mx-0">
       <h2 class="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
         Our <span class="text-emerald-500">team</span>
       </h2>
@@ -250,7 +216,7 @@
     </div>
     <ul
       role="list"
-      class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-4"
+      class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 md:mx-0 md:max-w-none md:grid-cols-3 xl:grid-cols-4"
     >
       <li>
         <img class="aspect-[14/13] w-full rounded-2xl object-cover" src="/assets/images/team/felipe.jpeg" alt="" />
@@ -275,9 +241,10 @@
     </ul>
   </div>
 
-  <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 mt-16 sm:mt-20">
-    <div class="px-6 lg:px-8">
-      <div class="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
+  <!-- Talk section -->
+  <div x-ref="talk_to_us" id="talk-to-us" class="mx-auto mt-16 grid grid-cols-1 sm:mt-20 md:grid-cols-2">
+    <div class="px-6 md:px-8">
+      <div class="mx-auto max-w-xl md:mx-0 md:max-w-lg">
         <h2 class="text-3xl font-semibold tracking-tight text-white">
           Let's <span class="text-emerald-500">talk</span>
         </h2>
@@ -349,8 +316,8 @@
         </dl>
       </div>
     </div>
-    <form action="#" method="POST" class="px-6 lg:px-8">
-      <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+    <form action="#" method="POST" class="px-6 md:px-8">
+      <div class="mx-auto max-w-xl md:mr-0 md:max-w-lg">
         <div class="grid grid-cols-1 gap-x-8 gap-y-6">
           <div>
             <label for="first-name" class="block text-sm font-semibold leading-6 text-white">Name</label>

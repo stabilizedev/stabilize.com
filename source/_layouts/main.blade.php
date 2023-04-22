@@ -8,8 +8,9 @@
     <title>{{ $page->title }}</title>
     <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}" />
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
   </head>
-  <body class="bg-neutral-900 font-sans antialiased">
+  <body class="bg-neutral-900 font-sans antialiased" x-data>
     <x-header></x-header>
     @yield('body')
     <x-footer></x-footer>

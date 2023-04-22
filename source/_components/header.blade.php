@@ -1,9 +1,9 @@
-<header class="absolute inset-x-0 top-0 z-50">
-  <nav class="mx-auto max-w-7xl flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+<header class="sticky inset-0 z-50 border-b border-neutral-900 bg-neutral-900 shadow-sm">
+  <nav x-ref="nav" class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div class="flex lg:flex-1">
-      <a href="#">
+      <a href="#" @click.prevent="window.scrollTo({top: $refs.nav.offsetTop, behavior: 'smooth'})">
         <span class="sr-only">Stabilize</span>
-        <img class="h-10 lg:h-12 w-auto" src="/assets/images/stabilize-white-text-emerald-logo.png" alt="" />
+        <img class="h-10 w-auto lg:h-12" src="/assets/images/stabilize-white-text-emerald-logo.png" alt="" />
       </a>
     </div>
     <div class="flex lg:hidden">
@@ -22,13 +22,33 @@
       </button>
     </div>
     <div class="hidden lg:flex lg:gap-x-6">
-      <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-emerald-500">Technologies</a>
+      <a
+        @click.prevent="window.scrollTo({top: $refs.technologies.offsetTop - $refs.nav.scrollHeight/2, behavior: 'smooth'})"
+        href="#technologies"
+        class="text-lg font-semibold leading-6 text-white hover:text-emerald-500"
+        >Technologies</a
+      >
 
-      <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-emerald-500">Tenets</a>
+      <a
+        @click.prevent="window.scrollTo({top: $refs.tenets.offsetTop - $refs.nav.scrollHeight/2, behavior: 'smooth'})"
+        href="#tenets"
+        class="text-lg font-semibold leading-6 text-white hover:text-emerald-500"
+        >Tenets</a
+      >
 
-      <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-emerald-500">Team</a>
+      <a
+        @click.prevent="window.scrollTo({top: $refs.team.offsetTop - $refs.nav.scrollHeight/2, behavior: 'smooth'})"
+        href="#team"
+        class="text-lg font-semibold leading-6 text-white hover:text-emerald-500"
+        >Team</a
+      >
 
-      <a href="#" class="text-lg font-semibold leading-6 text-white hover:text-emerald-500">Talk To Us</a>
+      <a
+        @click.prevent="window.scrollTo({top: $refs.talk_to_us.offsetTop - $refs.nav.scrollHeight/2, behavior: 'smooth'})"
+        href="#talk-to-us"
+        class="text-lg font-semibold leading-6 text-white hover:text-emerald-500"
+        >Talk To Us</a
+      >
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
